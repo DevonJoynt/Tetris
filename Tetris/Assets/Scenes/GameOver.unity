@@ -219,7 +219,7 @@ GameObject:
   - component: {fileID: 174893987}
   - component: {fileID: 174893986}
   m_Layer: 5
-  m_Name: Text (Legacy)
+  m_Name: Quit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -517,7 +517,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 1.3840637, y: -1.1531982}
+  m_AnchoredPosition: {x: 1.3840332, y: -1.1531982}
   m_SizeDelta: {x: 31.828148, y: 39.2087}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &883840353
@@ -570,8 +570,9 @@ GameObject:
   - component: {fileID: 1271729273}
   - component: {fileID: 1271729272}
   - component: {fileID: 1271729271}
+  - component: {fileID: 1271729274}
   m_Layer: 5
-  m_Name: Button (Legacy) (1)
+  m_Name: 'Restart Button '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -640,7 +641,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1271729272}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1271729274}
+        m_TargetAssemblyTypeName: ResetGame, Assembly-CSharp
+        m_MethodName: GameReset
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1271729272
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -679,6 +692,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1271729269}
   m_CullTransparentMesh: 1
+--- !u!114 &1271729274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1271729269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 197b4583b8d8aa44290b0c9adf1f7573, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1356999088
 GameObject:
   m_ObjectHideFlags: 0
@@ -691,8 +716,9 @@ GameObject:
   - component: {fileID: 1356999092}
   - component: {fileID: 1356999091}
   - component: {fileID: 1356999090}
+  - component: {fileID: 1356999093}
   m_Layer: 5
-  m_Name: Button (Legacy) (2)
+  m_Name: Quit Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -761,7 +787,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1356999091}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1356999093}
+        m_TargetAssemblyTypeName: ResetGame, Assembly-CSharp
+        m_MethodName: QuitGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1356999091
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -800,6 +838,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1356999088}
   m_CullTransparentMesh: 1
+--- !u!114 &1356999093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1356999088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 197b4583b8d8aa44290b0c9adf1f7573, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1373580557
 GameObject:
   m_ObjectHideFlags: 0
@@ -812,7 +862,7 @@ GameObject:
   - component: {fileID: 1373580560}
   - component: {fileID: 1373580559}
   m_Layer: 5
-  m_Name: Text (Legacy)
+  m_Name: Re-Start
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1012,7 +1062,7 @@ GameObject:
   - component: {fileID: 2021511655}
   - component: {fileID: 2021511654}
   m_Layer: 5
-  m_Name: Text (Legacy)
+  m_Name: Game Over
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
