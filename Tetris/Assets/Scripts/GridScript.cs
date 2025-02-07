@@ -9,7 +9,7 @@ public class GridScript : MonoBehaviour
     public int width, height;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         grid = new Transform[width, height];
     }
@@ -77,15 +77,19 @@ public class GridScript : MonoBehaviour
     }
     public void CheckForLines()
     {
+        int linecleared = 0;
+
         for (int y = 0; y < height; y++)
         {
             if (LineIsFull(y))
             {
                 DeleteLine(y);
+                linecleared++;
                 DecreaseRowsAbove(y + 1);
                 y--;
             }
         }
+        GetComponent<ScoreManager>().AddScore(linecleared);
     }
     bool LineIsFull(int y)
     {

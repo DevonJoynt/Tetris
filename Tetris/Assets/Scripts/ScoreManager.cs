@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class ScoreManager : MonoBehaviour
 {
+    public TMP_Text scoreText;
+
     public int score = 0; //Set the initial score to 0
 
     public void AddScore(int linesCleared)
@@ -21,5 +23,6 @@ public class ScoreManager : MonoBehaviour
         }
 
         Debug.Log($"Score: {score}");
+        scoreText.text = ($"Score: {score}");
     }
 }
