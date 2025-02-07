@@ -789,8 +789,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1356999093}
-        m_TargetAssemblyTypeName: ResetGame, Assembly-CSharp
-        m_MethodName: QuitGame
+        m_TargetAssemblyTypeName: ExitGame, Assembly-CSharp
+        m_MethodName: Finish
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -847,7 +847,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1356999088}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 197b4583b8d8aa44290b0c9adf1f7573, type: 3}
+  m_Script: {fileID: 11500000, guid: c4d64d6b6c5c0934fa9ee2c924c71b12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1373580557
